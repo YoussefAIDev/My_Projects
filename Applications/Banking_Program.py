@@ -1,3 +1,5 @@
+# Simple Python banking program with deposit, withdraw, transfer, and transaction history features.
+
 import time
 
 balance = 0
