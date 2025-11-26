@@ -1,52 +1,42 @@
-📌 Project Title
+# Image Classification using Convolutional Neural Networks (CNNs)
 
-Image Classification using Convolutional Neural Networks (CNNs)
+## Project Description
+This project builds an image classification model using a Convolutional Neural Network (CNN) to classify images of cats and dogs.  
+The notebook walks through the full pipeline of creating a deep learning model for computer vision.
 
-📘 Project Description
+The workflow includes:
+- Loading and preprocessing the dataset
+- Building a CNN architecture with TensorFlow/Keras
+- Training and validation
+- Evaluating model performance (accuracy and loss)
+- Making predictions and visualizing results
 
-This project implements an image classification model using a Convolutional Neural Network (CNN).
-The goal is to classify images of cats and dogs into their correct categories by learning visual patterns such as edges, textures, and shapes.
+This project serves as a beginner-friendly introduction to image classification using deep learning.
 
-The notebook walks through all essential steps of building a deep learning model for computer vision, including:
+---
 
-Dataset loading and preprocessing
+## Category
+- Deep Learning  
+- Computer Vision  
+- Image Classification  
 
-Building a CNN architecture using TensorFlow/Keras
+---
 
-Training and validation
+## Technologies Used
+- Python  
+- TensorFlow / Keras  
+- NumPy  
+- Matplotlib  
 
-Performance evaluation (accuracy, loss curves, predictions)
+---
 
-Visualizing model results
+## Model Highlights
+- CNN built using Conv2D, MaxPooling2D, Flatten, and Dense layers  
+- Trained with categorical crossentropy  
+- Simple and reusable template for image classification tasks  
 
-This project serves as a beginner–friendly introduction to computer vision and deep learning, showing how neural networks can understand images.
+---
 
-📂 Category
-
-Deep Learning
-
-Computer Vision
-
-Image Classification
-
-🚀 Technologies Used
-
-Python
-
-TensorFlow / Keras
-
-NumPy
-
-Matplotlib
-
-📊 Model Highlights
-
-Uses Conv2D, MaxPooling, Flatten, and Dense layers
-
-Trained using categorical crossentropy
-
-Suitable as a starting template for any image classification task
-
-📈 Results
-
-The model demonstrates how a CNN can learn meaningful patterns from images and achieve solid accuracy on the chosen dataset.
+## Results
+The model successfully learns visual features from images and achieves solid accuracy on the cats vs. dogs dataset.  
+This demonstrates the effectiveness of CNNs in recognizing visual patterns such as edges, textures, and shapes.
