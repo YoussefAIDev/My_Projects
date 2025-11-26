@@ -40,3 +40,16 @@ This project serves as a beginner-friendly introduction to image classification 
 ## Results
 The model successfully learns visual features from images and achieves solid accuracy on the cats vs. dogs dataset.  
 This demonstrates the effectiveness of CNNs in recognizing visual patterns such as edges, textures, and shapes.
+---
+## Flexibility & Dataset Options
+
+The model is fully modular and flexible.  
+If you would like to experiment further, you can easily replace the current dataset with any image classification dataset available online.  
+There are many high-quality cat vs. dog datasets on Kaggle that work perfectly with this notebook.
+
+Here are some recommended datasets:
+- https://www.kaggle.com/datasets/bhavikjikadara/dog-and-cat-classification-dataset  
+- https://www.kaggle.com/datasets/samuelcortinhas/cats-and-dogs-image-classification
+
+Feel free to download any dataset you like and plug it directly into the model with minimal changes.
+---
