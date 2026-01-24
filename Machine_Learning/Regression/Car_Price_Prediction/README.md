@@ -1,95 +1,84 @@
-Car Selling Price Prediction
+# Car Selling Price Prediction 🚗
 
-Predicting the selling price of used cars using machine learning regression models. This project demonstrates a full workflow from data exploration → preprocessing → modeling → evaluation → visualization, and can serve as a showcase of practical ML skills for a portfolio.
+Predict the selling price of used cars using machine learning regression models.
+This project demonstrates a complete ML workflow from data exploration → preprocessing → modeling → evaluation → visualization, making it perfect for a portfolio showcase.
 
-Dataset
+ # Dataset 📂
+ 
+The dataset used is car data.csv and contains the following features:
 
-The project uses car data.csv which includes the following features:
+# Feature	Description
 
-Car_Name: Name of the car
+Car_Name	Name of the car
+Year	Year of manufacturing
+Selling_Price	Target variable – selling price in lakhs (INR)
+Present_Price	Original price of the car in lakhs
+Kms_Driven	Distance driven in kilometers
+Owner	Number of previous owners
+Fuel_Type	Petrol, Diesel, or CNG
+Seller_Type	Dealer or Individual
+Transmission	Manual or Automatic
 
-Year: Year of manufacturing
+# Project Workflow 🛠
 
-Selling_Price: Target variable, selling price in lakhs (INR)
-
-Present_Price: Original price of the car in lakhs
-
-Kms_Driven: Distance driven in kilometers
-
-Owner: Number of previous owners
-
-Fuel_Type: Petrol, Diesel, or CNG
-
-Seller_Type: Dealer or Individual
-
-Transmission: Manual or Automatic
-
-Project Steps
-Data Exploration (EDA)
+# 1. Data Exploration (EDA)
 
 Checked for missing values and data types.
-
 Analyzed categorical feature distributions.
+Identified correlations and potential feature importance.
 
-Data Preprocessing
+# 2. Data Preprocessing
 
 Dropped irrelevant columns such as Car_Name.
+Encoded categorical features (Fuel_Type, Seller_Type, Transmission) using OneHotEncoder.
+Split the dataset into training and testing sets (90% train, 10% test).
+Standardized numerical features using StandardScaler for better model performance.
 
-Encoded categorical features (Fuel_Type, Seller_Type, Transmission) using OneHotEncoding.
+# 3. Modeling and Visualization
 
-Split the data into training and testing sets (90% train, 10% test).
-
-Standardized numerical features for better model performance.
-
-Modeling
-
-Applied Linear Regression and Lasso Regression.
-
+Built Linear Regression and Lasso Regression models.
 Evaluated models using R² score.
+Compared model predictions visually using scatterplots and residual plots.
 
-Results
+# Results 📊
 Model Performance
 Model	R² Score
-Linear Regression	0.85
-Lasso Regression	0.83
+Linear Regression	0.83
+Lasso Regression	0.90
 
 R² values may vary slightly depending on train/test split and scaling.
 
-Feature Importance (Lasso)
-Feature	Coefficient	Impact on Selling Price
+
+# Explainable AI - Feature Importance (Lasso)
+Feature	Coefficient	Impact on Selling Price:
+
 Present_Price	3.66	Higher original price → higher selling price
 Year	1.01	Newer cars → higher price
-Fuel_Type_Diesel	0.55	Diesel cars slightly higher price
-Seller_Type_Individual	-0.40	Selling from individual → lower price
+Fuel_Type_Diesel	0.55	Diesel cars slightly increase price
+Seller_Type_Individual	-0.40	Selling from an individual → lower price
 Kms_Driven	-0.09	More kilometers → slightly lower price
-Transmission_Manual	-0.13	Manual cars slightly lower price
-Owner	0	Not important in this model
-Fuel_Type_Petrol	0	Not important (baseline category)
-Visualizations
+Transmission_Manual	-0.13	Manual transmission → slightly lower price
+Owner	0	Not significant in this model
+Fuel_Type_Petrol	0	Not significant (baseline category)
 
-Predicted vs Actual Prices: Scatterplots for Linear and Lasso regression with a perfect prediction line.
+# Visualizations 📈
 
-Residuals Comparison: Residuals (actual minus predicted) for both models to visually inspect errors and model fit.
+Predicted vs Actual Prices: Scatterplots for Linear and Lasso Regression with a perfect prediction line.
+Residuals Comparison: Residuals (Actual − Predicted) for both models to inspect errors and model fit visually.
+Visualization helps to quickly identify model accuracy and potential overfitting.
 
-Getting Started
-Requirements
+# Requirements
 
 Python 3.x with the following libraries:
 
 numpy
-
 pandas
-
 matplotlib
-
 seaborn
-
 scikit-learn
 
-Running the Project
+# Steps to Run:
 
-Clone the repository.
-
+Clone the repository
 Open the Jupyter Notebook and run all cells.
-
-Ensure the dataset file car data.csv is in the correct path.
+Ensure car data.csv is in the correct path.
