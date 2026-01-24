@@ -1,4 +1,4 @@
-Car Selling Price Prediction 🚗
+- Car Selling Price Prediction 🚗
 
 Predict the selling price of used cars using machine learning regression models.
 This project demonstrates a complete ML workflow from data exploration → preprocessing → modeling → evaluation → visualization, making it perfect for a portfolio showcase.
@@ -7,7 +7,7 @@ This project demonstrates a complete ML workflow from data exploration → prepr
  
 The dataset used is car data.csv and contains the following features:
 
-# Feature	Description
+- Feature	Description
 
 Car_Name	Name of the car
 Year	Year of manufacturing
@@ -19,28 +19,28 @@ Fuel_Type	Petrol, Diesel, or CNG
 Seller_Type	Dealer or Individual
 Transmission	Manual or Automatic
 
-# Project Workflow 🛠
+- Project Workflow 🛠
 
-# 1. Data Exploration (EDA)
+- 1. Data Exploration (EDA)
 
 Checked for missing values and data types.
 Analyzed categorical feature distributions.
 Identified correlations and potential feature importance.
 
-# 2. Data Preprocessing
+- 2. Data Preprocessing
 
 Dropped irrelevant columns such as Car_Name.
 Encoded categorical features (Fuel_Type, Seller_Type, Transmission) using OneHotEncoder.
 Split the dataset into training and testing sets (90% train, 10% test).
 Standardized numerical features using StandardScaler for better model performance.
 
-# 3. Modeling and Visualization
+- 3. Modeling and Visualization
 
 Built Linear Regression and Lasso Regression models.
 Evaluated models using R² score.
 Compared model predictions visually using scatterplots and residual plots.
 
-# Results 📊
+- Results 📊
 Model Performance
 Model	R² Score
 Linear Regression	0.83
@@ -49,7 +49,7 @@ Lasso Regression	0.90
 R² values may vary slightly depending on train/test split and scaling.
 
 
-# Explainable AI - Feature Importance (Lasso)
+- Explainable AI - Feature Importance (Lasso)
 Feature	Coefficient	Impact on Selling Price:
 
 Present_Price	3.66	Higher original price → higher selling price
@@ -61,13 +61,13 @@ Transmission_Manual	-0.13	Manual transmission → slightly lower price
 Owner	0	Not significant in this model
 Fuel_Type_Petrol	0	Not significant (baseline category)
 
-# Visualizations 📈
+- Visualizations 📈
 
 Predicted vs Actual Prices: Scatterplots for Linear and Lasso Regression with a perfect prediction line.
 Residuals Comparison: Residuals (Actual − Predicted) for both models to inspect errors and model fit visually.
 Visualization helps to quickly identify model accuracy and potential overfitting.
 
-# Requirements
+- Requirements
 
 Python 3.x with the following libraries:
 
@@ -77,7 +77,7 @@ matplotlib
 seaborn
 scikit-learn
 
-# Steps to Run:
+- Steps to Run:
 
 Clone the repository
 Open the Jupyter Notebook and run all cells.
