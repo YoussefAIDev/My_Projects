@@ -88,7 +88,7 @@ scikit-learn
 
 Clone the repository:
 
-git clone https://github.com/yourusername/Car_Price_Prediction.git
+git clone https://github.com/YoussefAIDev/Car_Price_Prediction.git
 
 
 Open the Jupyter Notebook and run all cells.
