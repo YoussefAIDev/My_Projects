@@ -1,9 +1,9 @@
-# Car Selling Price Prediction 🚗
+Car Selling Price Prediction 🚗
 
 Predict the selling price of used cars using machine learning regression models.
 This project demonstrates a complete ML workflow from data exploration → preprocessing → modeling → evaluation → visualization, making it perfect for a portfolio showcase.
 
- # Dataset 📂
+- Dataset 📂
  
 The dataset used is car data.csv and contains the following features:
 
